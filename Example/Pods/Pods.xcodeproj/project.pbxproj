@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		023C820FECED1DA3545F5C7D380861D6 /* Version.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B5742FF88D5AD199B962217CE24C54 /* Version.framework */; };
+		0D0F86C21BA478890074FF28 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F86C11BA478890074FF28 /* Manager.swift */; settings = {ASSET_TAGS = (); }; };
 		188DADA7063BB5249C62641253963F46 /* Migrator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB135551EA048C168110419849860E /* Migrator.bundle */; };
 		31ED720CFD34AA2602F3B1255C14D0D0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE317C2600C1B922E8926552DB75912C /* Helper.swift */; };
 		3B1ED13E7D4E7FDFA197EF0C7E241688 /* Pods-Migrator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DB6D282E28FE36F8C9C3997B340CAF /* Pods-Migrator_Example-dummy.m */; };
@@ -18,7 +19,6 @@
 		78176608592BF79E2443338662C2312A /* Migrator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 016E6798D863E04F271B61F780542663 /* Migrator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8ADF20C356F0339F3E866B88908D6BA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A0CE8CAEE46D26FB0E3431678AB3A6 /* Foundation.framework */; };
 		8B65D31277FF206E0D7BAFB8811CB494 /* Pods-Migrator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A84827941EC20F91C74BEA45C89E73 /* Pods-Migrator_Tests-dummy.m */; };
-		ACF11F4398B38AAEE26108F8B6C26F43 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4686EC7A40912A71436A62EAAC8C9D /* ReplaceMe.swift */; };
 		B4A9A845E87876285F84F156386831FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A0CE8CAEE46D26FB0E3431678AB3A6 /* Foundation.framework */; };
 		CB8E5B4C5000C015905D9C55562D66A5 /* Migrator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 732ADE63BBB40344E36B630670D4BBDE /* Migrator-dummy.m */; };
 		EE94E34D2FB39EB13475E2B9C304F7D6 /* Version-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 574E55D0078C5BB8AD881588B1A6023D /* Version-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		016E6798D863E04F271B61F780542663 /* Migrator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Migrator-umbrella.h"; sourceTree = "<group>"; };
+		0D0F86C11BA478890074FF28 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		1FC5D351EF327BBC7998ED48B226ACC7 /* Pods-Migrator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Migrator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		22B6D48B184674AF3945ED2CC78D0F53 /* Migrator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Migrator-Private.xcconfig"; sourceTree = "<group>"; };
 		27EB1DE079583B7BCD7062BEAE10469E /* Pods-Migrator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Migrator_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		4811A2FAB9CDFEFC283E6610C6FB4456 /* Pods-Migrator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Migrator_Example.modulemap"; sourceTree = "<group>"; };
 		497EFB29976B4DFD4370B58237DD232F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49ADD785662F37C31379DFEC8A4BEC95 /* Version-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Version-dummy.m"; sourceTree = "<group>"; };
-		4A4686EC7A40912A71436A62EAAC8C9D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		54C96CAEA9910C8F9894876EADAD0D92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		574E55D0078C5BB8AD881588B1A6023D /* Version-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Version-umbrella.h"; sourceTree = "<group>"; };
 		5766E5DC2BC92E919A4539D3AD3F60F3 /* Version.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 		7108D7DFE8116788BE78CFF863004CD4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4A4686EC7A40912A71436A62EAAC8C9D /* ReplaceMe.swift */,
+				0D0F86C11BA478890074FF28 /* Manager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -552,7 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8E5B4C5000C015905D9C55562D66A5 /* Migrator-dummy.m in Sources */,
-				ACF11F4398B38AAEE26108F8B6C26F43 /* ReplaceMe.swift in Sources */,
+				0D0F86C21BA478890074FF28 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +663,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22B6D48B184674AF3945ED2CC78D0F53 /* Migrator-Private.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEFINES_MODULE = YES;
@@ -859,6 +860,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22B6D48B184674AF3945ED2CC78D0F53 /* Migrator-Private.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEFINES_MODULE = YES;
