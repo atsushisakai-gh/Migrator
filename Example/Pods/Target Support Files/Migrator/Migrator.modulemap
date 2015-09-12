@@ -1,0 +1,6 @@
+framework module Migrator {
+  umbrella header "Migrator-umbrella.h"
+
+  export *
+  module * { export * }
+}

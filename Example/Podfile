@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Migrator_Example', :exclusive => true do
+  pod "Migrator", :path => "../"
+end
+
+target 'Migrator_Tests', :exclusive => true do
+  pod "Migrator", :path => "../"
+
+  
+end

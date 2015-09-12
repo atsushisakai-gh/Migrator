@@ -1,0 +1,17 @@
+PODS:
+  - Migrator (0.1.0):
+    - Version
+  - Version (0.3.0)
+
+DEPENDENCIES:
+  - Migrator (from `../`)
+
+EXTERNAL SOURCES:
+  Migrator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Migrator: da577e5339b4c3705256244caf4b2c2766d9edf7
+  Version: 3927de9e6a2af388ac57d4c30c982210543f0965
+
+COCOAPODS: 0.38.2
