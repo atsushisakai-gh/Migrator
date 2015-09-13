@@ -35,5 +35,13 @@ class ManagerTests: XCTestCase {
         
         XCTAssertTrue(manager.lastMigratedVersion() == "1.0.0")
     }
+    
+    func testInitialVersionIsSaved() {
+        manager.setInitialVersion("2.0.0")
+        XCTAssertTrue(manager.lastMigratedVersion() == "2.0.0")
+
+        manager.setInitialVersion("4.0.0")
+        XCTAssertTrue(manager.lastMigratedVersion() == "2.0.0")
+    }
 
 }
