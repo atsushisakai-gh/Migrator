@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0AACDA10A9B2DF84C917DE5AEB26E2A3 /* Pods-Migrator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4120FBCAB87B8B89A77DBD42B83DEDFA /* Pods-Migrator_Tests-dummy.m */; };
 		0ACD0A19CBB5E5E71099EAEA423A7CFE /* EDSemver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833D27D2A056FD0C7BA75A5D5FCB7A9 /* EDSemver-dummy.m */; };
+		0D8976E51BA717E80043578E /* MigrationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8976E41BA717E80043578E /* MigrationHandler.swift */; };
+		0D8976E91BA71F780043578E /* MigrationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8976E41BA717E80043578E /* MigrationHandler.swift */; };
 		18974E18E0BBDBE404F6D5D935FA23D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF2EC4AEDF31BB7C4135E6065FF8480 /* Foundation.framework */; };
 		2A8505963B8742E45FAFF3858A4A3154 /* Pods-Migrator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDEDF5E385D69F7447C51CE62EEFDA9 /* Pods-Migrator_Example-dummy.m */; };
 		3A559382904E2F4BB6C66480DED86EB0 /* EDSemver.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D116EA34C43FB692C46B7ECCCEC552 /* EDSemver.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D8976E41BA717E80043578E /* MigrationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigrationHandler.swift; sourceTree = "<group>"; };
 		14D116EA34C43FB692C46B7ECCCEC552 /* EDSemver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDSemver.h; path = EDSemver/EDSemver.h; sourceTree = "<group>"; };
 		17B524B1F096159C4CC9D824F70025D0 /* EDSemver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDSemver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1833D27D2A056FD0C7BA75A5D5FCB7A9 /* EDSemver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EDSemver-dummy.m"; sourceTree = "<group>"; };
@@ -167,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				7672463564433E7012A903BA127850E3 /* Manager.swift */,
+				0D8976E41BA717E80043578E /* MigrationHandler.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -517,6 +521,7 @@
 			files = (
 				0ACD0A19CBB5E5E71099EAEA423A7CFE /* EDSemver-dummy.m in Sources */,
 				BADF77D34ABB4715606919DE21433F43 /* EDSemver.m in Sources */,
+				0D8976E51BA717E80043578E /* MigrationHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +554,7 @@
 			files = (
 				512AA008D8C65D3AEB1D8A02BF4B9F41 /* Manager.swift in Sources */,
 				C6A628E90C8AF3B8782E626C3815E7E5 /* Migrator-dummy.m in Sources */,
+				0D8976E91BA71F780043578E /* MigrationHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +761,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B78E6AAB50D92AC178CD5382F8D9F93C /* EDSemver-Private.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.3.0;
 				DEFINES_MODULE = YES;
@@ -772,6 +779,7 @@
 				PRODUCT_NAME = EDSemver;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -838,6 +846,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B78E6AAB50D92AC178CD5382F8D9F93C /* EDSemver-Private.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.3.0;
 				DEFINES_MODULE = YES;

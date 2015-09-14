@@ -13,10 +13,24 @@ public class Manager: NSObject {
     
     let kMigratorLastVersionKey = "com.radioboo.migratorLastVersionKey";
     
-    var migrationHandlers = []
+    var migrationHandlers: [MigrationHandler] = []
     
     override public init() {
         super.init()
+    }
+    
+    public func migrate() {
+        if self.migrationHandlers.count == 0 {
+            print("[Migrator ERROR] Completed Soon, Empty Handlers.");
+            return;
+        }
+        for handler: MigrationHandler in self.migrationHandlers {
+            migrate(handler)
+        }
+    }
+    
+    public func registerHandler(handler: MigrationHandler) {
+        migrationHandlers.append(handler)
     }
     
     public func currentVersion() -> String {
@@ -60,5 +74,9 @@ public class Manager: NSObject {
            setLastMigratedVersion(version)
         }
     }
-    
+
+    private func migrate(handler: MigrationHandler) {
+        handler.migrate()
+    }
+
 }

@@ -68,4 +68,15 @@ class ManagerTests: XCTestCase {
         XCTAssertTrue(managerMock.shouldMigrate() == true)
     }
     
+    func testMigrateHandlerSimply() {
+        var migrated: Bool = false;
+        
+        let handler: MigrationHandler =  MigrationHandler(
+            targetVersion: "2.0.0",
+            handler: { () -> () in migrated = true }
+        )
+        manager.registerHandler(handler)
+        manager.migrate()
+        XCTAssertTrue(migrated)
+    }
 }
