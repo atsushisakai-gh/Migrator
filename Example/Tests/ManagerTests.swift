@@ -10,6 +10,13 @@ import UIKit
 import XCTest
 import Migrator
 
+// Mocking
+class ManagerMock : Manager {
+    override func currentVersion() -> String {
+        return "1.0.0"
+    }
+}
+
 class ManagerTests: XCTestCase {
     
     let manager: Manager = Manager()
@@ -43,5 +50,22 @@ class ManagerTests: XCTestCase {
         manager.setInitialVersion("4.0.0")
         XCTAssertTrue(manager.lastMigratedVersion() == "2.0.0")
     }
+    
+    func testShouldMigrateIsFalseBecauseEqual() {
+        var managerMock: ManagerMock = ManagerMock()
+        managerMock.setInitialVersion("0.0.9")
+        XCTAssertFalse(managerMock.shouldMigrate() == true)
+    }
 
+    func testShouldMigrateIsFalseBecauseLess() {
+        var managerMock: ManagerMock = ManagerMock()
+        managerMock.setInitialVersion("1.0.0")
+        XCTAssertFalse(managerMock.shouldMigrate() == true)
+    }
+    func testShouldMigrate() {
+        var managerMock: ManagerMock = ManagerMock()
+        managerMock.setInitialVersion("1.0.1")
+        XCTAssertTrue(managerMock.shouldMigrate() == true)
+    }
+    
 }

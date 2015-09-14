@@ -1,7 +1,7 @@
 PODS:
+  - EDSemver (0.3.0)
   - Migrator (0.1.0):
-    - Version
-  - Version (0.3.0)
+    - EDSemver
 
 DEPENDENCIES:
   - Migrator (from `../`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Migrator: da577e5339b4c3705256244caf4b2c2766d9edf7
-  Version: 3927de9e6a2af388ac57d4c30c982210543f0965
+  EDSemver: 124a90685873628ec30f42504b461a1a61757568
+  Migrator: 2adc753036102874c0212da7909cb5f0288a88af
 
 COCOAPODS: 0.38.2

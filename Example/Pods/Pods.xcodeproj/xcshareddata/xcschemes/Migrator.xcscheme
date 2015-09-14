@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "620B911FB5B241FD0F31D1B3"
+               BlueprintIdentifier = "264D0BD5402F1524DB16D46C"
                BuildableName = "Migrator.framework"
                BlueprintName = "Migrator"
                ReferencedContainer = "container:Pods.xcodeproj">

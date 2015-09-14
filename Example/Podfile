@@ -7,6 +7,4 @@ end
 
 target 'Migrator_Tests', :exclusive => true do
   pod "Migrator", :path => "../"
-
-  
 end

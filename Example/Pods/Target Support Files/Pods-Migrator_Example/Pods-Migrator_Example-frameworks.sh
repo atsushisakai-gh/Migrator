@@ -52,10 +52,10 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'Pods-Migrator_Example/EDSemver.framework'
   install_framework 'Pods-Migrator_Example/Migrator.framework'
-  install_framework 'Pods-Migrator_Example/Version.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'Pods-Migrator_Example/EDSemver.framework'
   install_framework 'Pods-Migrator_Example/Migrator.framework'
-  install_framework 'Pods-Migrator_Example/Version.framework'
 fi

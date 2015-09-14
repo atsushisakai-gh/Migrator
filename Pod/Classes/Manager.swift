@@ -7,11 +7,13 @@
 //
 
 import UIKit
-import Version
+import EDSemver
 
 public class Manager: NSObject {
     
     let kMigratorLastVersionKey = "com.radioboo.migratorLastVersionKey";
+    
+    var migrationHandlers = []
     
     override public init() {
         super.init()
@@ -25,6 +27,15 @@ public class Manager: NSObject {
     public func lastMigratedVersion() -> String {
         let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         return defaults.stringForKey(kMigratorLastVersionKey) ?? ""
+    }
+    
+    public func shouldMigrate() -> Bool {
+        let last: EDSemver = EDSemver(string: lastMigratedVersion())
+        let current: EDSemver = EDSemver(string: currentVersion())
+        if last.isGreaterThan(current) {
+            return true
+        }
+        return false
     }
     
     public func reset() {
