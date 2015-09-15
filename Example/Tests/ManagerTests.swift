@@ -68,15 +68,47 @@ class ManagerTests: XCTestCase {
         XCTAssertTrue(managerMock.shouldMigrate() == true)
     }
     
+    // MARK: Migrate Tests
+
     func testMigrateHandlerSimply() {
+        manager.setInitialVersion("0.9.0")
+        
         var migrated: Bool = false;
         
         let handler: MigrationHandler =  MigrationHandler(
-            targetVersion: "2.0.0",
+            targetVersion: "1.0.0",
             handler: { () -> () in migrated = true }
         )
         manager.registerHandler(handler)
         manager.migrate()
-        XCTAssertTrue(migrated)
+        XCTAssertTrue(migrated == true)
+    }
+
+    func testDidNotMigrateHandlerlessCurrentVersion() {
+        manager.setInitialVersion("1.0.0")
+        
+        var migrated: Bool = false;
+        
+        let handler: MigrationHandler =  MigrationHandler(
+            targetVersion: "1.0.0",
+            handler: { () -> () in migrated = true }
+        )
+        manager.registerHandler(handler)
+        manager.migrate()
+        XCTAssertTrue(migrated == false)
+    }
+
+    func testDidNotMigrateHandlerOverCurrentVersion() {
+        manager.setInitialVersion("0.9.0")
+        
+        var migrated: Bool = false;
+        
+        let handler: MigrationHandler =  MigrationHandler(
+            targetVersion: "1.0.1",
+            handler: { () -> () in migrated = true }
+        )
+        manager.registerHandler(handler)
+        manager.migrate()
+        XCTAssertTrue(migrated == false)
     }
 }

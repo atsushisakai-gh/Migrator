@@ -15,10 +15,6 @@ public class Manager: NSObject {
     
     var migrationHandlers: [MigrationHandler] = []
     
-    override public init() {
-        super.init()
-    }
-    
     public func migrate() {
         if self.migrationHandlers.count == 0 {
             print("[Migrator ERROR] Completed Soon, Empty Handlers.");
@@ -76,7 +72,23 @@ public class Manager: NSObject {
     }
 
     private func migrate(handler: MigrationHandler) {
+        let targetVersion: EDSemver = EDSemver(string: handler.targetVersion)
+        let lastMigratedVersion: EDSemver = EDSemver(string: self.lastMigratedVersion())
+        let currentVersion: EDSemver = EDSemver(string: self.currentVersion())
+        
+        if lastMigratedVersion.isGreaterThan(targetVersion) {
+            return
+        }
+        
+        if targetVersion.isGreaterThan(currentVersion) {
+            return
+        }
+        
         handler.migrate()
+        
+        // TODO: exec Delegate Method
+        
+        setLastMigratedVersion(handler.targetVersion)
     }
 
 }
