@@ -11,7 +11,7 @@ import XCTest
 import Migrator
 
 // Mocking
-class ManagerMock : Manager {
+class ManagerMock : Manager  {
     override func currentVersion() -> String {
         return "1.0.0"
     }
@@ -52,18 +52,18 @@ class ManagerTests: XCTestCase {
     }
     
     func testShouldMigrateIsFalseBecauseEqual() {
-        var managerMock: ManagerMock = ManagerMock()
+        let managerMock: ManagerMock = ManagerMock()
         managerMock.setInitialVersion("0.0.9")
         XCTAssertFalse(managerMock.shouldMigrate() == true)
     }
 
     func testShouldMigrateIsFalseBecauseLess() {
-        var managerMock: ManagerMock = ManagerMock()
+        let managerMock: ManagerMock = ManagerMock()
         managerMock.setInitialVersion("1.0.0")
         XCTAssertFalse(managerMock.shouldMigrate() == true)
     }
     func testShouldMigrate() {
-        var managerMock: ManagerMock = ManagerMock()
+        let managerMock: ManagerMock = ManagerMock()
         managerMock.setInitialVersion("1.0.1")
         XCTAssertTrue(managerMock.shouldMigrate() == true)
     }
@@ -71,7 +71,7 @@ class ManagerTests: XCTestCase {
     // MARK: Migrate Tests
 
     func testSuccessedMigrate() {
-        var managerMock: ManagerMock = ManagerMock()
+        let managerMock: ManagerMock = ManagerMock()
 
         managerMock.setInitialVersion("0.9.0")
         
@@ -88,7 +88,7 @@ class ManagerTests: XCTestCase {
     }
 
     func testFailedMigrateReasonThatLastMigratedVersionEqualToTargerVerion() {
-        var managerMock: ManagerMock = ManagerMock()
+        let managerMock: ManagerMock = ManagerMock()
 
         managerMock.setInitialVersion("1.0.0")
         
@@ -105,7 +105,7 @@ class ManagerTests: XCTestCase {
     }
 
     func testFailedMigratedReasonThatTargetVersionIsLessThanLastMigrated() {
-        var managerMock: ManagerMock = ManagerMock()
+        let managerMock: ManagerMock = ManagerMock()
 
         managerMock.setInitialVersion("0.9.0")
         
@@ -122,7 +122,7 @@ class ManagerTests: XCTestCase {
     }
 
     func testFailedMigratedReasonThatTargetVersionIsGreaterThanCurrentVersion() {
-        var managerMock: ManagerMock = ManagerMock()
+        let managerMock: ManagerMock = ManagerMock()
 
         managerMock.setInitialVersion("1.0.0")
 
@@ -142,7 +142,7 @@ class ManagerTests: XCTestCase {
     // MARK: Multiple Migrate
 
     func testMultipleMigration() {
-        var managerMock: ManagerMock = ManagerMock()
+        let managerMock: ManagerMock = ManagerMock()
 
         managerMock.setInitialVersion("0.8.0")
 

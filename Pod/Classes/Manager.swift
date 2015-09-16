@@ -9,12 +9,25 @@
 import UIKit
 import EDSemver
 
+@objc protocol MigratorProtocol : class {
+
+    func didSucceededMigration(migratedVersion: String) -> ()
+
+    func didFailedMigration(migratedVersion: String) -> ()
+
+    func didCompletedAllMigration() -> ()
+
+}
+
 public class Manager: NSObject {
-    
-    let kMigratorLastVersionKey = "com.radioboo.migratorLastVersionKey";
-    
+
     var migrationHandlers: [MigrationHandler] = []
-    
+
+    var delegate: MigratorProtocol?
+
+    let kMigratorLastVersionKey = "com.radioboo.migratorLastVersionKey";
+
+
     public func migrate() {
         if self.migrationHandlers.count == 0 {
             print("[Migrator ERROR] Completed Soon, Empty Handlers.");
@@ -23,8 +36,9 @@ public class Manager: NSObject {
         for handler: MigrationHandler in self.migrationHandlers {
             migrate(handler)
         }
+        self.delegate?.didCompletedAllMigration()
     }
-    
+
     public func registerHandler(handler: MigrationHandler) {
         migrationHandlers.append(handler)
     }
@@ -84,12 +98,16 @@ public class Manager: NSObject {
         if targetVersion.isGreaterThan(currentVersion) {
             return
         }
-        
-        handler.migrate()
-        
-        // TODO: exec Delegate Method
-        
+
+        do {
+            try handler.migrate()
+        } catch {
+            self.delegate?.didFailedMigration(handler.targetVersion)
+        }
+
         setLastMigratedVersion(handler.targetVersion)
+
+        self.delegate?.didSucceededMigration(handler.targetVersion)
     }
 
 }

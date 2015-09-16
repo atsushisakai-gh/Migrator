@@ -19,7 +19,7 @@ public class MigrationHandler: NSObject {
         self.handler = handler
     }
     
-    public func migrate() {
+    public func migrate() throws {
         self.handler()
     }
 }
