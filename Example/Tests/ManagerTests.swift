@@ -84,6 +84,7 @@ class ManagerTests: XCTestCase {
         managerMock.registerHandler(handler)
         managerMock.migrate()
         XCTAssertTrue(migrated == true)
+        XCTAssertTrue(managerMock.lastMigratedVersion() == "1.0.0")
     }
 
     func testFailedMigrateReasonThatLastMigratedVersionEqualToTargerVerion() {
@@ -100,6 +101,7 @@ class ManagerTests: XCTestCase {
         managerMock.registerHandler(handler)
         managerMock.migrate()
         XCTAssertTrue(migrated == false)
+        XCTAssertTrue(managerMock.lastMigratedVersion() == "1.0.0")
     }
 
     func testFailedMigratedReasonThatTargetVersionIsLessThanLastMigrated() {
@@ -116,6 +118,7 @@ class ManagerTests: XCTestCase {
         managerMock.registerHandler(handler)
         managerMock.migrate()
         XCTAssertTrue(migrated == false)
+        XCTAssertTrue(managerMock.lastMigratedVersion() == "0.9.0")
     }
 
     func testFailedMigratedReasonThatTargetVersionIsGreaterThanCurrentVersion() {
@@ -132,6 +135,8 @@ class ManagerTests: XCTestCase {
         managerMock.registerHandler(handler)
         managerMock.migrate()
         XCTAssertTrue(migrated == false)
+
+        XCTAssertTrue(managerMock.lastMigratedVersion() == "1.0.0")
     }
 
     // MARK: Multiple Migrate
