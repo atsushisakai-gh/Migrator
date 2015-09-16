@@ -70,8 +70,10 @@ class ManagerTests: XCTestCase {
     
     // MARK: Migrate Tests
 
-    func testMigrateHandlerSimply() {
-        manager.setInitialVersion("0.9.0")
+    func testSuccessedMigrate() {
+        var managerMock: ManagerMock = ManagerMock()
+
+        managerMock.setInitialVersion("0.9.0")
         
         var migrated: Bool = false;
         
@@ -79,13 +81,15 @@ class ManagerTests: XCTestCase {
             targetVersion: "1.0.0",
             handler: { () -> () in migrated = true }
         )
-        manager.registerHandler(handler)
-        manager.migrate()
+        managerMock.registerHandler(handler)
+        managerMock.migrate()
         XCTAssertTrue(migrated == true)
     }
 
-    func testDidNotMigrateHandlerlessCurrentVersion() {
-        manager.setInitialVersion("1.0.0")
+    func testFailedMigrateReasonThatLastMigratedVersionEqualToTargerVerion() {
+        var managerMock: ManagerMock = ManagerMock()
+
+        managerMock.setInitialVersion("1.0.0")
         
         var migrated: Bool = false;
         
@@ -93,22 +97,89 @@ class ManagerTests: XCTestCase {
             targetVersion: "1.0.0",
             handler: { () -> () in migrated = true }
         )
-        manager.registerHandler(handler)
-        manager.migrate()
+        managerMock.registerHandler(handler)
+        managerMock.migrate()
         XCTAssertTrue(migrated == false)
     }
 
-    func testDidNotMigrateHandlerOverCurrentVersion() {
-        manager.setInitialVersion("0.9.0")
+    func testFailedMigratedReasonThatTargetVersionIsLessThanLastMigrated() {
+        var managerMock: ManagerMock = ManagerMock()
+
+        managerMock.setInitialVersion("0.9.0")
         
         var migrated: Bool = false;
         
+        let handler: MigrationHandler =  MigrationHandler(
+            targetVersion: "0.8.0",
+            handler: { () -> () in migrated = true }
+        )
+        managerMock.registerHandler(handler)
+        managerMock.migrate()
+        XCTAssertTrue(migrated == false)
+    }
+
+    func testFailedMigratedReasonThatTargetVersionIsGreaterThanCurrentVersion() {
+        var managerMock: ManagerMock = ManagerMock()
+
+        managerMock.setInitialVersion("1.0.0")
+
+        var migrated: Bool = false;
+
         let handler: MigrationHandler =  MigrationHandler(
             targetVersion: "1.0.1",
             handler: { () -> () in migrated = true }
         )
-        manager.registerHandler(handler)
-        manager.migrate()
+        managerMock.registerHandler(handler)
+        managerMock.migrate()
         XCTAssertTrue(migrated == false)
     }
+
+    // MARK: Multiple Migrate
+
+    func testMultipleMigration() {
+        var managerMock: ManagerMock = ManagerMock()
+
+        managerMock.setInitialVersion("0.8.0")
+
+        var migrated_0_8_1: Bool = false;
+        var migrated_0_9_0: Bool = false;
+        var migrated_1_0_0: Bool = false;
+        var migrated_1_0_1: Bool = false;
+
+        let handler_0_8_1: MigrationHandler =  MigrationHandler(
+            targetVersion: "0.8.1",
+            handler: { () -> () in migrated_0_8_1 = true }
+        )
+
+        let handler_0_9_0: MigrationHandler =  MigrationHandler(
+            targetVersion: "0.9.0",
+            handler: { () -> () in migrated_0_9_0 = true }
+        )
+
+        let handler_1_0_0: MigrationHandler =  MigrationHandler(
+            targetVersion: "1.0.0",
+            handler: { () -> () in migrated_1_0_0 = true }
+        )
+
+        let handler_1_0_1: MigrationHandler =  MigrationHandler(
+            targetVersion: "1.0.1",
+            handler: { () -> () in migrated_1_0_1 = true }
+        )
+
+
+        managerMock.registerHandler(handler_0_8_1)
+        managerMock.registerHandler(handler_0_9_0)
+        managerMock.registerHandler(handler_1_0_0)
+        managerMock.registerHandler(handler_1_0_1)
+
+        managerMock.migrate()
+
+        XCTAssertTrue(migrated_0_8_1 == true)
+        XCTAssertTrue(migrated_0_9_0 == true)
+        XCTAssertTrue(migrated_1_0_0 == true)
+        XCTAssertFalse(migrated_1_0_1 == true)
+
+        XCTAssertTrue(managerMock.lastMigratedVersion() == "1.0.0")
+    }
+
 }

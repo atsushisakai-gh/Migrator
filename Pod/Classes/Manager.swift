@@ -75,8 +75,9 @@ public class Manager: NSObject {
         let targetVersion: EDSemver = EDSemver(string: handler.targetVersion)
         let lastMigratedVersion: EDSemver = EDSemver(string: self.lastMigratedVersion())
         let currentVersion: EDSemver = EDSemver(string: self.currentVersion())
-        
-        if lastMigratedVersion.isGreaterThan(targetVersion) {
+
+        if targetVersion.isLessThan(lastMigratedVersion)
+            || targetVersion.isEqualTo(lastMigratedVersion) {
             return
         }
         
