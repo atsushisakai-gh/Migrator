@@ -76,12 +76,7 @@ class MigratorTests: XCTestCase, MigratorProtocol {
         migratorMock.setInitialVersion("0.9.0")
         
         var migrated: Bool = false;
-        
-        let handler: MigrationHandler =  MigrationHandler(
-            targetVersion: "1.0.0",
-            handler: { () -> () in migrated = true }
-        )
-        migratorMock.registerHandler(handler)
+        migratorMock.registerHandler("1.0.0", migration: { () -> () in migrated = true })
         migratorMock.migrate()
         XCTAssertTrue(migrated == true)
         XCTAssertTrue(migratorMock.lastMigratedVersion() == "1.0.0")
@@ -93,12 +88,7 @@ class MigratorTests: XCTestCase, MigratorProtocol {
         migratorMock.setInitialVersion("1.0.0")
         
         var migrated: Bool = false;
-        
-        let handler: MigrationHandler =  MigrationHandler(
-            targetVersion: "1.0.0",
-            handler: { () -> () in migrated = true }
-        )
-        migratorMock.registerHandler(handler)
+        migratorMock.registerHandler("1.0.0", migration: { () -> () in migrated = true })
         migratorMock.migrate()
         XCTAssertTrue(migrated == false)
         XCTAssertTrue(migratorMock.lastMigratedVersion() == "1.0.0")
@@ -110,12 +100,7 @@ class MigratorTests: XCTestCase, MigratorProtocol {
         migratorMock.setInitialVersion("0.9.0")
         
         var migrated: Bool = false;
-        
-        let handler: MigrationHandler =  MigrationHandler(
-            targetVersion: "0.8.0",
-            handler: { () -> () in migrated = true }
-        )
-        migratorMock.registerHandler(handler)
+        migratorMock.registerHandler("0.8.0", migration: { () -> () in migrated = true })
         migratorMock.migrate()
         XCTAssertTrue(migrated == false)
         XCTAssertTrue(migratorMock.lastMigratedVersion() == "0.9.0")
@@ -127,12 +112,7 @@ class MigratorTests: XCTestCase, MigratorProtocol {
         migratorMock.setInitialVersion("1.0.0")
 
         var migrated: Bool = false;
-
-        let handler: MigrationHandler =  MigrationHandler(
-            targetVersion: "1.0.1",
-            handler: { () -> () in migrated = true }
-        )
-        migratorMock.registerHandler(handler)
+        migratorMock.registerHandler("1.0.1", migration: { () -> () in migrated = true })
         migratorMock.migrate()
         XCTAssertTrue(migrated == false)
 
@@ -151,30 +131,10 @@ class MigratorTests: XCTestCase, MigratorProtocol {
         var migrated_1_0_0: Bool = false;
         var migrated_1_0_1: Bool = false;
 
-        let handler_0_8_1: MigrationHandler =  MigrationHandler(
-            targetVersion: "0.8.1",
-            handler: { () -> () in migrated_0_8_1 = true }
-        )
-
-        let handler_0_9_0: MigrationHandler =  MigrationHandler(
-            targetVersion: "0.9.0",
-            handler: { () -> () in migrated_0_9_0 = true }
-        )
-
-        let handler_1_0_0: MigrationHandler =  MigrationHandler(
-            targetVersion: "1.0.0",
-            handler: { () -> () in migrated_1_0_0 = true }
-        )
-
-        let handler_1_0_1: MigrationHandler =  MigrationHandler(
-            targetVersion: "1.0.1",
-            handler: { () -> () in migrated_1_0_1 = true }
-        )
-
-        migratorMock.registerHandler(handler_0_8_1)
-        migratorMock.registerHandler(handler_0_9_0)
-        migratorMock.registerHandler(handler_1_0_0)
-        migratorMock.registerHandler(handler_1_0_1)
+        migratorMock.registerHandler("0.8.1", migration: { () -> () in migrated_0_8_1 = true })
+        migratorMock.registerHandler("0.9.0", migration: { () -> () in migrated_0_9_0 = true })
+        migratorMock.registerHandler("1.0.0", migration: { () -> () in migrated_1_0_0 = true })
+        migratorMock.registerHandler("1.0.1", migration: { () -> () in migrated_1_0_1 = true })
 
         migratorMock.migrate()
 
@@ -194,12 +154,7 @@ class MigratorTests: XCTestCase, MigratorProtocol {
         migratorMock.setInitialVersion("0.9.0")
 
         var migrated: Bool = false;
-
-        let handler: MigrationHandler =  MigrationHandler(
-            targetVersion: "1.0.0",
-            handler: { () -> () in migrated = true }
-        )
-        migratorMock.registerHandler(handler)
+        migratorMock.registerHandler("1.0.0", migration: { () -> () in migrated = true })
         migratorMock.delegate = self
         migratorMock.migrate()
         XCTAssertTrue(migrated == true)
@@ -214,12 +169,7 @@ class MigratorTests: XCTestCase, MigratorProtocol {
         let migratorMock: MigratorMock = MigratorMock()
 
         migratorMock.setInitialVersion("0.9.0")
-
-        let handler: MigrationHandler =  MigrationHandler(
-            targetVersion: "1.0.0",
-            handler: { () throws -> () in throw TestError.UnexpectedError }
-        )
-        migratorMock.registerHandler(handler)
+        migratorMock.registerHandler("1.0.0", migration: { () throws -> () in throw TestError.UnexpectedError })
         migratorMock.delegate = self
         migratorMock.migrate()
     }

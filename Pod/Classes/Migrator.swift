@@ -38,10 +38,11 @@ public class Migrator: NSObject {
         self.delegate?.didCompletedAllMigration!()
     }
 
-    public func registerHandler(handler: MigrationHandler) {
-        migrationHandlers.append(handler)
+    public func registerHandler(targetVersion: String, migration: () throws -> Void) {
+        let handler: MigrationHandler = MigrationHandler(targetVersion: targetVersion, handler: migration)
+        registerHandler(handler)
     }
-    
+
     public func currentVersion() -> String {
         let currentVersion:String = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
         return currentVersion;
@@ -72,6 +73,11 @@ public class Migrator: NSObject {
     }
     
     // MARK: - Private Methods
+
+    private func registerHandler(handler: MigrationHandler) {
+        migrationHandlers.append(handler)
+    }
+
     private func setLastMigratedVersion(version: String) {
         let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(version, forKey:kMigratorLastVersionKey)
