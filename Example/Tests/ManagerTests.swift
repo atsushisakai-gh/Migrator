@@ -17,7 +17,7 @@ class ManagerMock : Manager  {
     }
 }
 
-class ManagerTests: XCTestCase {
+class ManagerTests: XCTestCase, MigratorProtocol {
     
     let manager: Manager = Manager()
 
@@ -171,7 +171,6 @@ class ManagerTests: XCTestCase {
             handler: { () -> () in migrated_1_0_1 = true }
         )
 
-
         managerMock.registerHandler(handler_0_8_1)
         managerMock.registerHandler(handler_0_9_0)
         managerMock.registerHandler(handler_1_0_0)
@@ -187,4 +186,34 @@ class ManagerTests: XCTestCase {
         XCTAssertTrue(managerMock.lastMigratedVersion() == "1.0.0")
     }
 
+    // MARK: Delegate
+
+    func testSuccessedMigrateDelegate() {
+        let managerMock: ManagerMock = ManagerMock()
+
+        managerMock.setInitialVersion("0.9.0")
+
+        var migrated: Bool = false;
+
+        let handler: MigrationHandler =  MigrationHandler(
+            targetVersion: "1.0.0",
+            handler: { () -> () in migrated = true }
+        )
+        managerMock.registerHandler(handler)
+        managerMock.delegate = self
+        managerMock.migrate()
+        XCTAssertTrue(migrated == true)
+        XCTAssertTrue(managerMock.lastMigratedVersion() == "1.0.0")
+    }
+
+    func didSucceededMigration(migratedVersion: String) {
+        XCTAssertTrue(migratedVersion == "1.0.0")
+    }
+
+    func didFailedMigration(migratedVersion: String) {
+        XCTAssertTrue(migratedVersion == "1.0.0")
+    }
+
+    func didCompletedAllMigration() {
+    }
 }

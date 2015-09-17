@@ -9,7 +9,7 @@
 import UIKit
 import EDSemver
 
-@objc protocol MigratorProtocol : class {
+@objc public protocol MigratorProtocol : class {
 
     func didSucceededMigration(migratedVersion: String) -> ()
 
@@ -23,10 +23,9 @@ public class Manager: NSObject {
 
     var migrationHandlers: [MigrationHandler] = []
 
-    var delegate: MigratorProtocol?
+    public var delegate: MigratorProtocol?
 
     let kMigratorLastVersionKey = "com.radioboo.migratorLastVersionKey";
-
 
     public func migrate() {
         if self.migrationHandlers.count == 0 {
