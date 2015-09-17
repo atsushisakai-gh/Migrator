@@ -11,11 +11,11 @@ import EDSemver
 
 @objc public protocol MigratorProtocol : class {
 
-    func didSucceededMigration(migratedVersion: String) -> ()
+    optional func didSucceededMigration(migratedVersion: String) -> ()
 
-    func didFailedMigration(migratedVersion: String) -> ()
+    optional func didFailedMigration(migratedVersion: String) -> ()
 
-    func didCompletedAllMigration() -> ()
+    optional func didCompletedAllMigration() -> ()
 
 }
 
