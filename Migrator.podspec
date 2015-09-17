@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "Migrator"
-  s.version          = "0.1.0"
-  s.summary          = "Migrator is Swift Library for performing the migration"
+  s.version          = "0.1.1"
+  s.summary          = "Migrator"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/radioboo/Migrator"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "SAKAI, Atsushi" => "sakai.atsushi@gmail.com" }
+  s.author           = { "radioboo" => "sakai.atsushi@gmail.com" }
   s.source           = { :git => "https://github.com/radioboo/Migrator.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
