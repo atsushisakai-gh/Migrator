@@ -1,5 +1,5 @@
 //
-//  Manager.swift
+//  Migrator.swift
 //  Pods
 //
 //  Created by 酒井篤 on 2015/09/13.
@@ -19,7 +19,7 @@ import EDSemver
 
 }
 
-public class Manager: NSObject {
+public class Migrator: NSObject {
 
     var migrationHandlers: [MigrationHandler] = []
 
