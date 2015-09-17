@@ -48,6 +48,31 @@ func didCompletedAllMigration() {
 }
 ```
 
+#### Error Handling
+
+This library corresponds to ```Swift 2.0 Error Handling```
+(The Swift Programming Language)[https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html]
+
+```swift
+// Define your custom ErrorType
+enum MigrationError: ErrorType {
+  case UnexpectedError
+}
+
+let migrator: Migrator = Migrator()
+migrator.delegate = self // you can recognize to throw error from handler with delegate.
+migrator.registerHandler("1.0.1") { () throws -> Void in
+    print("[Migrator] Migration to v1.0.0....")
+    throw MigrationError.UnexpectedError // Migration Closure will throw Error
+}
+migrator.migrate()
+
+// will call below delegate method
+func didFailedMigration(migratedVersion: String) {
+    print("[Migrator] Did Failed Migration to version \(migratedVersion)!!")
+}
+```
+
 ## Installation
 
 Migrator is available through [CocoaPods](http://cocoapods.org). To install
