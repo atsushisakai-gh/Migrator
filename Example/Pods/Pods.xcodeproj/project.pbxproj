@@ -7,117 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02840D6BF239951309BA626024311F3C /* EDSemver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8EACFC8FEA0546A33FC12AA6A3AA15 /* EDSemver.framework */; };
 		0AACDA10A9B2DF84C917DE5AEB26E2A3 /* Pods-Migrator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4120FBCAB87B8B89A77DBD42B83DEDFA /* Pods-Migrator_Tests-dummy.m */; };
-		177467F600D4C8703DC2449637756779 /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9041E3021AE6BAC09CEC11B20C72A /* Migrator.swift */; };
-		18974E18E0BBDBE404F6D5D935FA23D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2749421AE34A993B16FF590595E8813 /* Foundation.framework */; };
-		19227AD06EE90C684457E274675C3290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2749421AE34A993B16FF590595E8813 /* Foundation.framework */; };
-		20128665393A63E116621274DC6ED585 /* EDSemver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2AF83AB9ADC1F54C6987253C33E8C2 /* EDSemver.framework */; };
+		18974E18E0BBDBE404F6D5D935FA23D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90B1B21DDE5D07381AC96A8D2EEF4 /* Foundation.framework */; };
 		2A8505963B8742E45FAFF3858A4A3154 /* Pods-Migrator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDEDF5E385D69F7447C51CE62EEFDA9 /* Pods-Migrator_Example-dummy.m */; };
-		35414352D930CA2BEB33801D8179C0C2 /* Migrator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65646F02446BFC6F2D2A069A52CD68A0 /* Migrator-dummy.m */; };
+		40944EAA1E369DE8A6385FED7E7FF710 /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1D03B4505C7327F385AA0B57E3351 /* Migrator.swift */; };
 		462F70025CF6E765D2F06C77918DCB4F /* Pods-Migrator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2A3C0E745C5283B50E25DD32A653AF /* Pods-Migrator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C2641ED734473D450F2512FF922AD22 /* EDSemver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7861828FF0E1637B1D4F78ABE87CD452 /* EDSemver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B3E8A206BDDFAE8C9CB624F80CDBA6B /* Migrator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4CE01C73C15E578BB1973F966C1C77CB /* Migrator.bundle */; };
-		7302416FC17221D2BE33956935AAD556 /* EDSemver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 836491A5755F38018677C4D1CAA26CA3 /* EDSemver-dummy.m */; };
-		945D8BFE400817360653C66791AEE515 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2749421AE34A993B16FF590595E8813 /* Foundation.framework */; };
-		ABBD2D239A1063F076C49A511493C8B7 /* Migrator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2B8B5CB675348E47F6A47940C5E1F47 /* Migrator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF9371EF06CF33123D2D3006A4489B8F /* EDSemver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7AC3DCE3C6F5CBCEDB27FFA02B3FCC /* EDSemver.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4C80E0E161746484E7198740663053A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90B1B21DDE5D07381AC96A8D2EEF4 /* Foundation.framework */; };
+		5D28C9B81D7CF84E25038233DD09615A /* EDSemver.h in Headers */ = {isa = PBXBuildFile; fileRef = 87758DE216AC438BA64808CC4251A30D /* EDSemver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		789FB261D9ECE2D8332340C3FF234BCA /* MigrationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A69AC2AD5102B7567CF67C86AE5096 /* MigrationHandler.swift */; };
+		8144D19148EFEC675251A593AAAFEEE0 /* Migrator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B463747560E7D178BA8283F8A5C0F /* Migrator-dummy.m */; };
+		91AD9410A90056CEBA38FB6C8472AD95 /* EDSemver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDBEAF35DB513D66132E730535407C6 /* EDSemver.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		945D8BFE400817360653C66791AEE515 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90B1B21DDE5D07381AC96A8D2EEF4 /* Foundation.framework */; };
+		AB1AA0FEF8FBCB1FB57D49AD587839F7 /* EDSemver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A67581F5DA3CAB83F4752593361F0745 /* EDSemver-dummy.m */; };
+		ABF378B935F213567C0730365560EAF7 /* Migrator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A27C1D47628183107236108E43FA5A /* Migrator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0012F20675334E63EDDFA424F01B30D /* Pods-Migrator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 828390EE24ADF8BD9CD3E61E3F55CF01 /* Pods-Migrator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7AAD9D3BE76D90E2C5A54E0691A5636 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2749421AE34A993B16FF590595E8813 /* Foundation.framework */; };
-		E7ACF661EDACF16E89631E7ACBD80810 /* MigrationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2A86E8415FA3CCFB0972DCAAC22B8 /* MigrationHandler.swift */; };
-		F77F0D4C44B3143514ED6694EE56B1D1 /* EDSemver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA513C662CF318F934B9BFE4E15985F /* EDSemver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17A4D38254CF5FF2F328F49B8AAC2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F90B1B21DDE5D07381AC96A8D2EEF4 /* Foundation.framework */; };
+		EC3433263B918AFE8D5097B30E7D5685 /* EDSemver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85BF7C029EF1B2D62FFF53FF19E08C3E /* EDSemver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BE0C703AB9A0C02C2DAC234DD80AF /* Migrator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1BE674AA4F5909B3BB922DF5B968427A /* Migrator.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0D9A295CFA08848B9540F7190B0381FD /* PBXContainerItemProxy */ = {
+		0343CB93001BB30B6F8FE7238544B7BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4139BF786752F2FF4DF32090E41DD7EF;
+			remoteGlobalIDString = FBD0DFA0CA9E49BAD3D541A5633DBD47;
 			remoteInfo = EDSemver;
 		};
-		82F8BD91C11A182838B949A37FA78AC2 /* PBXContainerItemProxy */ = {
+		1D5C34251B167990DD96D4E763DCB3F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4139BF786752F2FF4DF32090E41DD7EF;
+			remoteGlobalIDString = FBD0DFA0CA9E49BAD3D541A5633DBD47;
 			remoteInfo = EDSemver;
 		};
-		89451F631DA441399FD7822A68BA94CD /* PBXContainerItemProxy */ = {
+		48C5EE427CBBF8A0A3225A0E9FFA66B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D45D30B17763572F04AC0BEF8CD7421F;
+			remoteGlobalIDString = 9D1FAB1EF78E8E4A371FABCEE0A5468F;
 			remoteInfo = "Migrator-Migrator";
 		};
-		B34E23F4118C14DD7C3C142748CF71A8 /* PBXContainerItemProxy */ = {
+		522C07FDCA0936414AFBAD6DF72FEFF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF3A9DB8E100351CDD592BCA1937C6D2;
+			remoteGlobalIDString = C0C43BBD428CD2CE5A93DA46C9EB63EB;
 			remoteInfo = Migrator;
 		};
-		D26467154CFDC6826189C7F9722E2E88 /* PBXContainerItemProxy */ = {
+		5592A720D305F4893EB83F384D425891 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4139BF786752F2FF4DF32090E41DD7EF;
+			remoteGlobalIDString = FBD0DFA0CA9E49BAD3D541A5633DBD47;
 			remoteInfo = EDSemver;
 		};
-		E5AAFDE875E3DDD507667AE67E322595 /* PBXContainerItemProxy */ = {
+		C698E3766059C63F0E3B53A6B5089111 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF3A9DB8E100351CDD592BCA1937C6D2;
+			remoteGlobalIDString = C0C43BBD428CD2CE5A93DA46C9EB63EB;
 			remoteInfo = Migrator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C71994F82612E724481E9A1A83C9BE1 /* Migrator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Migrator-Private.xcconfig"; sourceTree = "<group>"; };
 		1911AEB34D42F0385F33ABFD37955C6E /* Pods-Migrator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Migrator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BE674AA4F5909B3BB922DF5B968427A /* Migrator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Migrator.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDF18AED36ED4CC2A33588EFD462F52 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FC5D351EF327BBC7998ED48B226ACC7 /* Pods-Migrator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Migrator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2881636D1BB6D9400DB09E86559C1F19 /* Pods-Migrator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Migrator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2B907547F02472447F7EB273646BAFC7 /* Pods-Migrator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Migrator_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2EF9041E3021AE6BAC09CEC11B20C72A /* Migrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
-		2FA513C662CF318F934B9BFE4E15985F /* EDSemver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDSemver.h; path = EDSemver/EDSemver.h; sourceTree = "<group>"; };
-		3B08FB9849EA5D2FE5E5272198610504 /* EDSemver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDSemver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A69AC2AD5102B7567CF67C86AE5096 /* MigrationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MigrationHandler.swift; sourceTree = "<group>"; };
+		39A1D03B4505C7327F385AA0B57E3351 /* Migrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
 		3C9A355E87CEA1CE0423C8E2FF3BDEF9 /* Pods_Migrator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Migrator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4120FBCAB87B8B89A77DBD42B83DEDFA /* Pods-Migrator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Migrator_Tests-dummy.m"; sourceTree = "<group>"; };
 		4811A2FAB9CDFEFC283E6610C6FB4456 /* Pods-Migrator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Migrator_Example.modulemap"; sourceTree = "<group>"; };
-		4CE01C73C15E578BB1973F966C1C77CB /* Migrator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Migrator.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		545D0CA6FCF25E36FCF7CB2A7C70394C /* Pods-Migrator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Migrator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		54C96CAEA9910C8F9894876EADAD0D92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58961274C376C0920CEE16D9278D9790 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F2AF83AB9ADC1F54C6987253C33E8C2 /* EDSemver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDSemver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FCE13DBB332DDAE19D3002DD26126D /* Pods-Migrator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Migrator_Tests-resources.sh"; sourceTree = "<group>"; };
-		65646F02446BFC6F2D2A069A52CD68A0 /* Migrator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Migrator-dummy.m"; sourceTree = "<group>"; };
 		6C772EB09D552451930E7950E3206974 /* Pods_Migrator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Migrator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74C2A86E8415FA3CCFB0972DCAAC22B8 /* MigrationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MigrationHandler.swift; sourceTree = "<group>"; };
 		780D6116FD62CDD6ECAEC8EADE15EF7A /* Pods-Migrator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Migrator_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7861828FF0E1637B1D4F78ABE87CD452 /* EDSemver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDSemver-umbrella.h"; sourceTree = "<group>"; };
 		78BF243436D60005C8BE481269632863 /* Pods-Migrator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Migrator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7E2A3C0E745C5283B50E25DD32A653AF /* Pods-Migrator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Migrator_Example-umbrella.h"; sourceTree = "<group>"; };
+		81F90B1B21DDE5D07381AC96A8D2EEF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		828390EE24ADF8BD9CD3E61E3F55CF01 /* Pods-Migrator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Migrator_Tests-umbrella.h"; sourceTree = "<group>"; };
-		836491A5755F38018677C4D1CAA26CA3 /* EDSemver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EDSemver-dummy.m"; sourceTree = "<group>"; };
-		8B7AC3DCE3C6F5CBCEDB27FFA02B3FCC /* EDSemver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDSemver.m; path = EDSemver/EDSemver.m; sourceTree = "<group>"; };
-		A2749421AE34A993B16FF590595E8813 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		84A27C1D47628183107236108E43FA5A /* Migrator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Migrator-umbrella.h"; sourceTree = "<group>"; };
+		85BF7C029EF1B2D62FFF53FF19E08C3E /* EDSemver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDSemver-umbrella.h"; sourceTree = "<group>"; };
+		87758DE216AC438BA64808CC4251A30D /* EDSemver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDSemver.h; path = EDSemver/EDSemver.h; sourceTree = "<group>"; };
+		8B3A9D83C6F26A547CF3DA4BC2EB868F /* Migrator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Migrator-Private.xcconfig"; sourceTree = "<group>"; };
+		8CDBEAF35DB513D66132E730535407C6 /* EDSemver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDSemver.m; path = EDSemver/EDSemver.m; sourceTree = "<group>"; };
+		8D043190A2BEFE6BE3281D7D640E1A79 /* EDSemver-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "EDSemver-Private.xcconfig"; sourceTree = "<group>"; };
+		981B463747560E7D178BA8283F8A5C0F /* Migrator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Migrator-dummy.m"; sourceTree = "<group>"; };
 		A3413769AF09FAEE7069D62BE6536B58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67581F5DA3CAB83F4752593361F0745 /* EDSemver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EDSemver-dummy.m"; sourceTree = "<group>"; };
 		A9086895BE7422802B1AAE8D5DF8EB8C /* Migrator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Migrator.xcconfig; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC7BE91A4BA915B9D2290A6CBC80B1BC /* Pods-Migrator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Migrator_Tests.modulemap"; sourceTree = "<group>"; };
 		BE7B5AD241C42B865DD18EDAAF63F9A8 /* Migrator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Migrator.modulemap; sourceTree = "<group>"; };
 		BFDEDF5E385D69F7447C51CE62EEFDA9 /* Pods-Migrator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Migrator_Example-dummy.m"; sourceTree = "<group>"; };
-		C2B8B5CB675348E47F6A47940C5E1F47 /* Migrator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Migrator-umbrella.h"; sourceTree = "<group>"; };
 		C40EE8D323F729962603B55E284829B6 /* Pods-Migrator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Migrator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DABBA186A67DE2CBC926C22F0C4D0914 /* Migrator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Migrator-prefix.pch"; sourceTree = "<group>"; };
+		DB8EACFC8FEA0546A33FC12AA6A3AA15 /* EDSemver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDSemver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB703158AB8189333D4C4179A011E64 /* EDSemver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EDSemver.xcconfig; sourceTree = "<group>"; };
+		DC1EB2CFC0729D9D1D9FD10EAB3DB35C /* EDSemver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDSemver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EA7A8E7CB38243B0B8B1FDCE7B25B4 /* Pods-Migrator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Migrator_Example-resources.sh"; sourceTree = "<group>"; };
-		F18DDD1056EA6063D43B6215A9D9EDB5 /* EDSemver-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "EDSemver-Private.xcconfig"; sourceTree = "<group>"; };
+		E76B61F3B4B13EB8D491F49D27D78434 /* Migrator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Migrator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27263EDA58AE4BB9C06169DAB5570A4 /* Pods-Migrator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Migrator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F36C8CA3B623341C7DF7D92749B531CF /* Pods-Migrator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Migrator_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		F454CFDD3D897373403F4B62AD277660 /* EDSemver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDSemver-prefix.pch"; sourceTree = "<group>"; };
-		F59093DDCBEB28A4E1BBEE31475B0351 /* Migrator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Migrator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F718B9D9DC7B969E3235AB68D465FC15 /* EDSemver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EDSemver.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,20 +130,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73B9C090767AF40E1F392C205D4D7C8C /* Frameworks */ = {
+		547126F48E8D1CFC3E3822D56ED9B808 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7AAD9D3BE76D90E2C5A54E0691A5636 /* Foundation.framework in Frameworks */,
+				4C80E0E161746484E7198740663053A9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB98CB226D48697C1C534FEC66B841FD /* Frameworks */ = {
+		5FB124342EA02CDCA2F21F83F05AE01E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20128665393A63E116621274DC6ED585 /* EDSemver.framework in Frameworks */,
-				19227AD06EE90C684457E274675C3290 /* Foundation.framework in Frameworks */,
+				02840D6BF239951309BA626024311F3C /* EDSemver.framework in Frameworks */,
+				C17A4D38254CF5FF2F328F49B8AAC2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A076F4EF64D8D7A09686DE4DDC0093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,16 +162,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE50E0A423CCBC905270A909AD4F14D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003DB86FC8205D8516C2532C8C412554 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				38A69AC2AD5102B7567CF67C86AE5096 /* MigrationHandler.swift */,
+				39A1D03B4505C7327F385AA0B57E3351 /* Migrator.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		55A6FDC92D7A214E9CD28815B03895C3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,10 +188,10 @@
 				54C96CAEA9910C8F9894876EADAD0D92 /* Info.plist */,
 				BE7B5AD241C42B865DD18EDAAF63F9A8 /* Migrator.modulemap */,
 				A9086895BE7422802B1AAE8D5DF8EB8C /* Migrator.xcconfig */,
-				0C71994F82612E724481E9A1A83C9BE1 /* Migrator-Private.xcconfig */,
-				65646F02446BFC6F2D2A069A52CD68A0 /* Migrator-dummy.m */,
+				8B3A9D83C6F26A547CF3DA4BC2EB868F /* Migrator-Private.xcconfig */,
+				981B463747560E7D178BA8283F8A5C0F /* Migrator-dummy.m */,
 				DABBA186A67DE2CBC926C22F0C4D0914 /* Migrator-prefix.pch */,
-				C2B8B5CB675348E47F6A47940C5E1F47 /* Migrator-umbrella.h */,
+				84A27C1D47628183107236108E43FA5A /* Migrator-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Migrator";
@@ -191,7 +200,7 @@
 		6A6031391D78F2D1B5D072297B3E3CDF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A2749421AE34A993B16FF590595E8813 /* Foundation.framework */,
+				81F90B1B21DDE5D07381AC96A8D2EEF4 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -199,8 +208,8 @@
 		7333F61BFA937BA3FF2BC716ED0E6106 /* EDSemver */ = {
 			isa = PBXGroup;
 			children = (
-				2FA513C662CF318F934B9BFE4E15985F /* EDSemver.h */,
-				8B7AC3DCE3C6F5CBCEDB27FFA02B3FCC /* EDSemver.m */,
+				87758DE216AC438BA64808CC4251A30D /* EDSemver.h */,
+				8CDBEAF35DB513D66132E730535407C6 /* EDSemver.m */,
 				9597124FE6C092C4DEC425E439DF5AF0 /* Support Files */,
 			);
 			path = EDSemver;
@@ -223,10 +232,10 @@
 			children = (
 				F718B9D9DC7B969E3235AB68D465FC15 /* EDSemver.modulemap */,
 				DBB703158AB8189333D4C4179A011E64 /* EDSemver.xcconfig */,
-				F18DDD1056EA6063D43B6215A9D9EDB5 /* EDSemver-Private.xcconfig */,
-				836491A5755F38018677C4D1CAA26CA3 /* EDSemver-dummy.m */,
+				8D043190A2BEFE6BE3281D7D640E1A79 /* EDSemver-Private.xcconfig */,
+				A67581F5DA3CAB83F4752593361F0745 /* EDSemver-dummy.m */,
 				F454CFDD3D897373403F4B62AD277660 /* EDSemver-prefix.pch */,
-				7861828FF0E1637B1D4F78ABE87CD452 /* EDSemver-umbrella.h */,
+				85BF7C029EF1B2D62FFF53FF19E08C3E /* EDSemver-umbrella.h */,
 				1CDF18AED36ED4CC2A33588EFD462F52 /* Info.plist */,
 			);
 			name = "Support Files";
@@ -251,15 +260,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		B225B9FA7AF5B90F4A4F4DFAAC27C07A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2EF9041E3021AE6BAC09CEC11B20C72A /* Migrator.swift */,
-				74C2A86E8415FA3CCFB0972DCAAC22B8 /* MigrationHandler.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BDBC65F87923DA74C72DA5AB36276757 /* Pods-Migrator_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,9 +281,9 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B08FB9849EA5D2FE5E5272198610504 /* EDSemver.framework */,
-				4CE01C73C15E578BB1973F966C1C77CB /* Migrator.bundle */,
-				F59093DDCBEB28A4E1BBEE31475B0351 /* Migrator.framework */,
+				DC1EB2CFC0729D9D1D9FD10EAB3DB35C /* EDSemver.framework */,
+				1BE674AA4F5909B3BB922DF5B968427A /* Migrator.bundle */,
+				E76B61F3B4B13EB8D491F49D27D78434 /* Migrator.framework */,
 				3C9A355E87CEA1CE0423C8E2FF3BDEF9 /* Pods_Migrator_Example.framework */,
 				6C772EB09D552451930E7950E3206974 /* Pods_Migrator_Tests.framework */,
 			);
@@ -293,7 +293,7 @@
 		E2D15415B8E940DED82CB21686B6F516 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				B225B9FA7AF5B90F4A4F4DFAAC27C07A /* Classes */,
+				003DB86FC8205D8516C2532C8C412554 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -301,7 +301,7 @@
 		F1A6E55C4E9B869C981E959C9980C2ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F2AF83AB9ADC1F54C6987253C33E8C2 /* EDSemver.framework */,
+				DB8EACFC8FEA0546A33FC12AA6A3AA15 /* EDSemver.framework */,
 				6A6031391D78F2D1B5D072297B3E3CDF /* iOS */,
 			);
 			name = Frameworks;
@@ -345,12 +345,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24F631F7E476E6D2DA5D2F1F47F20A09 /* Headers */ = {
+		15455E3854C62D7B032A914AEA70EB8B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2641ED734473D450F2512FF922AD22 /* EDSemver-umbrella.h in Headers */,
-				F77F0D4C44B3143514ED6694EE56B1D1 /* EDSemver.h in Headers */,
+				EC3433263B918AFE8D5097B30E7D5685 /* EDSemver-umbrella.h in Headers */,
+				5D28C9B81D7CF84E25038233DD09615A /* EDSemver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1971BF70073D197BDC67105DA7077386 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF378B935F213567C0730365560EAF7 /* Migrator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,34 +370,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43B15BB2978AA316E39D63FB2F7395FF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ABBD2D239A1063F076C49A511493C8B7 /* Migrator-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4139BF786752F2FF4DF32090E41DD7EF /* EDSemver */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 368B21FE880F7A52EDBDAAC64FD3C4E3 /* Build configuration list for PBXNativeTarget "EDSemver" */;
-			buildPhases = (
-				53A2F9360C22FC5D6C08290F39C4A271 /* Sources */,
-				73B9C090767AF40E1F392C205D4D7C8C /* Frameworks */,
-				24F631F7E476E6D2DA5D2F1F47F20A09 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = EDSemver;
-			productName = EDSemver;
-			productReference = 3B08FB9849EA5D2FE5E5272198610504 /* EDSemver.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		6DD991904837BE4E3B862E8F293B5894 /* Pods-Migrator_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27EDDE04F74A862548C929EB856CC299 /* Build configuration list for PBXNativeTarget "Pods-Migrator_Example" */;
@@ -401,21 +384,21 @@
 			buildRules = (
 			);
 			dependencies = (
-				6DB4CCF6D918018BFF9F3B0B5F654986 /* PBXTargetDependency */,
-				401FED1DB41A08A61E5B483260A27D96 /* PBXTargetDependency */,
+				8EA649C2A3F2BAC6A8DE7B12EA7F51FF /* PBXTargetDependency */,
+				1B5E74ABE1CF5D4616453AAA156FD6EA /* PBXTargetDependency */,
 			);
 			name = "Pods-Migrator_Example";
 			productName = "Pods-Migrator_Example";
 			productReference = 3C9A355E87CEA1CE0423C8E2FF3BDEF9 /* Pods_Migrator_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D45D30B17763572F04AC0BEF8CD7421F /* Migrator-Migrator */ = {
+		9D1FAB1EF78E8E4A371FABCEE0A5468F /* Migrator-Migrator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B77AE68171AA065FCF4F650EA101026C /* Build configuration list for PBXNativeTarget "Migrator-Migrator" */;
+			buildConfigurationList = 17385E940A36AF48F1E541785FB79290 /* Build configuration list for PBXNativeTarget "Migrator-Migrator" */;
 			buildPhases = (
-				91F26A785ED252D2B29965D71650CA79 /* Sources */,
-				EE50E0A423CCBC905270A909AD4F14D9 /* Frameworks */,
-				5AE0083D237FC1C59D9F273DBFBC63CE /* Resources */,
+				B5C6FD745A2BB892567F22BA46114653 /* Sources */,
+				99A076F4EF64D8D7A09686DE4DDC0093 /* Frameworks */,
+				3E1543DA8B032E8DDA5AB3CC73E23355 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -423,27 +406,27 @@
 			);
 			name = "Migrator-Migrator";
 			productName = "Migrator-Migrator";
-			productReference = 4CE01C73C15E578BB1973F966C1C77CB /* Migrator.bundle */;
+			productReference = 1BE674AA4F5909B3BB922DF5B968427A /* Migrator.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		DF3A9DB8E100351CDD592BCA1937C6D2 /* Migrator */ = {
+		C0C43BBD428CD2CE5A93DA46C9EB63EB /* Migrator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAD3B411E85299FA8D81E0FD832A5AED /* Build configuration list for PBXNativeTarget "Migrator" */;
+			buildConfigurationList = 2E4A820FE51F5257117D2E8E35648BA8 /* Build configuration list for PBXNativeTarget "Migrator" */;
 			buildPhases = (
-				047F055075872E9E57851518B4C82643 /* Sources */,
-				DB98CB226D48697C1C534FEC66B841FD /* Frameworks */,
-				F8290B20AA34399DA714B16313E55D2B /* Resources */,
-				43B15BB2978AA316E39D63FB2F7395FF /* Headers */,
+				A08D6FA8174A049EDAA71C1B30625A52 /* Sources */,
+				5FB124342EA02CDCA2F21F83F05AE01E /* Frameworks */,
+				C7B566D3E950314B61E783A783EE5DB8 /* Resources */,
+				1971BF70073D197BDC67105DA7077386 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2D70624E8AD05C323DD4F0EE5BA795E4 /* PBXTargetDependency */,
-				2D139F5EE5E47B053B26380C87FAA67D /* PBXTargetDependency */,
+				883B0DFE7F241E359D3B93E6ED4298C5 /* PBXTargetDependency */,
+				88C565D429F9C0238A15D81B725D5732 /* PBXTargetDependency */,
 			);
 			name = Migrator;
 			productName = Migrator;
-			productReference = F59093DDCBEB28A4E1BBEE31475B0351 /* Migrator.framework */;
+			productReference = E76B61F3B4B13EB8D491F49D27D78434 /* Migrator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F544143CDA81049AB8B28BBCF8FE9829 /* Pods-Migrator_Tests */ = {
@@ -457,12 +440,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				78CB5622F0C07E809D316ADD330B4B3B /* PBXTargetDependency */,
-				DCBB09C76352A7ACB3B6C56957749534 /* PBXTargetDependency */,
+				282B2B9B256B2C4A518C193E14192B11 /* PBXTargetDependency */,
+				86BB1C463C89119096FA36C332B56FFD /* PBXTargetDependency */,
 			);
 			name = "Pods-Migrator_Tests";
 			productName = "Pods-Migrator_Tests";
 			productReference = 6C772EB09D552451930E7950E3206974 /* Pods_Migrator_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBD0DFA0CA9E49BAD3D541A5633DBD47 /* EDSemver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91856366514E8D1B133AFB3885983B73 /* Build configuration list for PBXNativeTarget "EDSemver" */;
+			buildPhases = (
+				5DE8A58D65FE413267D59F3533F5B949 /* Sources */,
+				547126F48E8D1CFC3E3822D56ED9B808 /* Frameworks */,
+				15455E3854C62D7B032A914AEA70EB8B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EDSemver;
+			productName = EDSemver;
+			productReference = DC1EB2CFC0729D9D1D9FD10EAB3DB35C /* EDSemver.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -486,9 +486,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4139BF786752F2FF4DF32090E41DD7EF /* EDSemver */,
-				DF3A9DB8E100351CDD592BCA1937C6D2 /* Migrator */,
-				D45D30B17763572F04AC0BEF8CD7421F /* Migrator-Migrator */,
+				FBD0DFA0CA9E49BAD3D541A5633DBD47 /* EDSemver */,
+				C0C43BBD428CD2CE5A93DA46C9EB63EB /* Migrator */,
+				9D1FAB1EF78E8E4A371FABCEE0A5468F /* Migrator-Migrator */,
 				6DD991904837BE4E3B862E8F293B5894 /* Pods-Migrator_Example */,
 				F544143CDA81049AB8B28BBCF8FE9829 /* Pods-Migrator_Tests */,
 			);
@@ -496,48 +496,38 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5AE0083D237FC1C59D9F273DBFBC63CE /* Resources */ = {
+		3E1543DA8B032E8DDA5AB3CC73E23355 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8290B20AA34399DA714B16313E55D2B /* Resources */ = {
+		C7B566D3E950314B61E783A783EE5DB8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B3E8A206BDDFAE8C9CB624F80CDBA6B /* Migrator.bundle in Resources */,
+				F84BE0C703AB9A0C02C2DAC234DD80AF /* Migrator.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		047F055075872E9E57851518B4C82643 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				177467F600D4C8703DC2449637756779 /* Migrator.swift in Sources */,
-				E7ACF661EDACF16E89631E7ACBD80810 /* MigrationHandler.swift in Sources */,
-				35414352D930CA2BEB33801D8179C0C2 /* Migrator-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53A2F9360C22FC5D6C08290F39C4A271 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7302416FC17221D2BE33956935AAD556 /* EDSemver-dummy.m in Sources */,
-				BF9371EF06CF33123D2D3006A4489B8F /* EDSemver.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BB7DBD3B6016C063DEE6BCC9EE697A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2A8505963B8742E45FAFF3858A4A3154 /* Pods-Migrator_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE8A58D65FE413267D59F3533F5B949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1AA0FEF8FBCB1FB57D49AD587839F7 /* EDSemver-dummy.m in Sources */,
+				91AD9410A90056CEBA38FB6C8472AD95 /* EDSemver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +539,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91F26A785ED252D2B29965D71650CA79 /* Sources */ = {
+		A08D6FA8174A049EDAA71C1B30625A52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789FB261D9ECE2D8332340C3FF234BCA /* MigrationHandler.swift in Sources */,
+				8144D19148EFEC675251A593AAAFEEE0 /* Migrator-dummy.m in Sources */,
+				40944EAA1E369DE8A6385FED7E7FF710 /* Migrator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C6FD745A2BB892567F22BA46114653 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -559,41 +559,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D139F5EE5E47B053B26380C87FAA67D /* PBXTargetDependency */ = {
+		1B5E74ABE1CF5D4616453AAA156FD6EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Migrator;
+			target = C0C43BBD428CD2CE5A93DA46C9EB63EB /* Migrator */;
+			targetProxy = 522C07FDCA0936414AFBAD6DF72FEFF7 /* PBXContainerItemProxy */;
+		};
+		282B2B9B256B2C4A518C193E14192B11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EDSemver;
+			target = FBD0DFA0CA9E49BAD3D541A5633DBD47 /* EDSemver */;
+			targetProxy = 1D5C34251B167990DD96D4E763DCB3F0 /* PBXContainerItemProxy */;
+		};
+		86BB1C463C89119096FA36C332B56FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Migrator;
+			target = C0C43BBD428CD2CE5A93DA46C9EB63EB /* Migrator */;
+			targetProxy = C698E3766059C63F0E3B53A6B5089111 /* PBXContainerItemProxy */;
+		};
+		883B0DFE7F241E359D3B93E6ED4298C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EDSemver;
+			target = FBD0DFA0CA9E49BAD3D541A5633DBD47 /* EDSemver */;
+			targetProxy = 0343CB93001BB30B6F8FE7238544B7BF /* PBXContainerItemProxy */;
+		};
+		88C565D429F9C0238A15D81B725D5732 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Migrator-Migrator";
-			target = D45D30B17763572F04AC0BEF8CD7421F /* Migrator-Migrator */;
-			targetProxy = 89451F631DA441399FD7822A68BA94CD /* PBXContainerItemProxy */;
+			target = 9D1FAB1EF78E8E4A371FABCEE0A5468F /* Migrator-Migrator */;
+			targetProxy = 48C5EE427CBBF8A0A3225A0E9FFA66B9 /* PBXContainerItemProxy */;
 		};
-		2D70624E8AD05C323DD4F0EE5BA795E4 /* PBXTargetDependency */ = {
+		8EA649C2A3F2BAC6A8DE7B12EA7F51FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EDSemver;
-			target = 4139BF786752F2FF4DF32090E41DD7EF /* EDSemver */;
-			targetProxy = 82F8BD91C11A182838B949A37FA78AC2 /* PBXContainerItemProxy */;
-		};
-		401FED1DB41A08A61E5B483260A27D96 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Migrator;
-			target = DF3A9DB8E100351CDD592BCA1937C6D2 /* Migrator */;
-			targetProxy = E5AAFDE875E3DDD507667AE67E322595 /* PBXContainerItemProxy */;
-		};
-		6DB4CCF6D918018BFF9F3B0B5F654986 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EDSemver;
-			target = 4139BF786752F2FF4DF32090E41DD7EF /* EDSemver */;
-			targetProxy = D26467154CFDC6826189C7F9722E2E88 /* PBXContainerItemProxy */;
-		};
-		78CB5622F0C07E809D316ADD330B4B3B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EDSemver;
-			target = 4139BF786752F2FF4DF32090E41DD7EF /* EDSemver */;
-			targetProxy = 0D9A295CFA08848B9540F7190B0381FD /* PBXContainerItemProxy */;
-		};
-		DCBB09C76352A7ACB3B6C56957749534 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Migrator;
-			target = DF3A9DB8E100351CDD592BCA1937C6D2 /* Migrator */;
-			targetProxy = B34E23F4118C14DD7C3C142748CF71A8 /* PBXContainerItemProxy */;
+			target = FBD0DFA0CA9E49BAD3D541A5633DBD47 /* EDSemver */;
+			targetProxy = 5592A720D305F4893EB83F384D425891 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -631,61 +631,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		3B8DCF2AB533A3899EC837355650BCD3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F18DDD1056EA6063D43B6215A9D9EDB5 /* EDSemver-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.3.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.3.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EDSemver/EDSemver-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EDSemver/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EDSemver/EDSemver.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = EDSemver;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		51ADE1FC89ED4171016FBA75CD1DFE24 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C71994F82612E724481E9A1A83C9BE1 /* Migrator-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Migrator/Migrator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Migrator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Migrator/Migrator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Migrator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -756,30 +701,15 @@
 			};
 			name = Debug;
 		};
-		623D16AD2201062A086E12CA512A1F8B /* Release */ = {
+		65AE0F8C66E0E34AC6AD2337A21FD462 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F18DDD1056EA6063D43B6215A9D9EDB5 /* EDSemver-Private.xcconfig */;
+			baseConfigurationReference = 8B3A9D83C6F26A547CF3DA4BC2EB868F /* Migrator-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.3.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.3.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EDSemver/EDSemver-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EDSemver/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EDSemver/EDSemver.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = EDSemver;
+				PRODUCT_NAME = Migrator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -813,6 +743,46 @@
 			};
 			name = Debug;
 		};
+		72DF3566714FE72B8FBA5C7A1E55AB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3A9D83C6F26A547CF3DA4BC2EB868F /* Migrator-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Migrator/Migrator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Migrator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Migrator/Migrator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Migrator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75B090E25FCA31D4365AF37F82899D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3A9D83C6F26A547CF3DA4BC2EB868F /* Migrator-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Migrator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		7C4BE1B590FAA133BA02AE89E3E1F18D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F27263EDA58AE4BB9C06169DAB5570A4 /* Pods-Migrator_Example.release.xcconfig */;
@@ -842,37 +812,25 @@
 			};
 			name = Release;
 		};
-		B839560A7AC57162BC219A9F9D93CA09 /* Debug */ = {
+		B9A91B83DB021869D32A7C7FC73DE3FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C71994F82612E724481E9A1A83C9BE1 /* Migrator-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Migrator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		BCDB5D9D56BC7EFFD322779FD38D8F75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C71994F82612E724481E9A1A83C9BE1 /* Migrator-Private.xcconfig */;
+			baseConfigurationReference = 8D043190A2BEFE6BE3281D7D640E1A79 /* EDSemver-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
+				CURRENT_PROJECT_VERSION = 0.3.0;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.0;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Migrator/Migrator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Migrator/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/EDSemver/EDSemver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EDSemver/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Migrator/Migrator.modulemap";
+				MODULEMAP_FILE = "Target Support Files/EDSemver/EDSemver.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Migrator;
+				PRODUCT_NAME = EDSemver;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -910,21 +868,72 @@
 			};
 			name = Release;
 		};
-		E1A7155237486C6BF18A1B552C0B9C61 /* Release */ = {
+		DF79758DC88164D26FB2AF2AA15F3E41 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C71994F82612E724481E9A1A83C9BE1 /* Migrator-Private.xcconfig */;
+			baseConfigurationReference = 8D043190A2BEFE6BE3281D7D640E1A79 /* EDSemver-Private.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.3.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EDSemver/EDSemver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EDSemver/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EDSemver/EDSemver.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EDSemver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDBF803105A6103802157D4295309B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3A9D83C6F26A547CF3DA4BC2EB868F /* Migrator-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Migrator/Migrator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Migrator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Migrator/Migrator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Migrator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17385E940A36AF48F1E541785FB79290 /* Build configuration list for PBXNativeTarget "Migrator-Migrator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B090E25FCA31D4365AF37F82899D28 /* Debug */,
+				65AE0F8C66E0E34AC6AD2337A21FD462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		27EDDE04F74A862548C929EB856CC299 /* Build configuration list for PBXNativeTarget "Pods-Migrator_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -943,11 +952,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		368B21FE880F7A52EDBDAAC64FD3C4E3 /* Build configuration list for PBXNativeTarget "EDSemver" */ = {
+		2E4A820FE51F5257117D2E8E35648BA8 /* Build configuration list for PBXNativeTarget "Migrator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B8DCF2AB533A3899EC837355650BCD3 /* Debug */,
-				623D16AD2201062A086E12CA512A1F8B /* Release */,
+				72DF3566714FE72B8FBA5C7A1E55AB3F /* Debug */,
+				FDBF803105A6103802157D4295309B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -961,20 +970,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77AE68171AA065FCF4F650EA101026C /* Build configuration list for PBXNativeTarget "Migrator-Migrator" */ = {
+		91856366514E8D1B133AFB3885983B73 /* Build configuration list for PBXNativeTarget "EDSemver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B839560A7AC57162BC219A9F9D93CA09 /* Debug */,
-				E1A7155237486C6BF18A1B552C0B9C61 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAD3B411E85299FA8D81E0FD832A5AED /* Build configuration list for PBXNativeTarget "Migrator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				51ADE1FC89ED4171016FBA75CD1DFE24 /* Debug */,
-				BCDB5D9D56BC7EFFD322779FD38D8F75 /* Release */,
+				DF79758DC88164D26FB2AF2AA15F3E41 /* Debug */,
+				B9A91B83DB021869D32A7C7FC73DE3FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

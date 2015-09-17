@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "summary": "A short description of Migrator.",
   "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/Migrator",
+  "homepage": "https://github.com/radioboo/Migrator",
   "license": "MIT",
   "authors": {
     "SAKAI, Atsushi": "sakai.atsushi@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Migrator.git",
+    "git": "https://github.com/radioboo/Migrator.git",
     "tag": "0.1.0"
   },
   "platforms": {
