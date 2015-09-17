@@ -51,7 +51,7 @@ func didCompletedAllMigration() {
 #### Error Handling
 
 This library corresponds to ```Swift 2.0 Error Handling```
-(The Swift Programming Language)[https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html]
+[The Swift Programming Language](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html)
 
 ```swift
 // Define your custom ErrorType
