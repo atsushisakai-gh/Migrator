@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import Migrator
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, MigratorProtocol {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        // Migrator Snippets
+        let migrator: Migrator = Migrator()
+        // Comment in if you want to migrate again.
+        // migrator.reset()
+        migrator.setInitialVersion("1.0.0")
+        migrator.delegate = self
+        migrator.registerHandler("1.0.1") { () -> Void in
+            print("[Migrator] Migration to v1.0.0....")
+        }
+        migrator.migrate()
+
         return true
     }
 
@@ -39,6 +52,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+    func didSucceededMigration(migratedVersion: String) {
+        print("[Migrator] Did Succeeded Migration to version \(migratedVersion)!!")
+    }
+
+    func didCompletedAllMigration() {
+        print("[Migrator] Completed Migrations!!")
     }
 
 
