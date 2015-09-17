@@ -12,14 +12,14 @@ public class MigrationHandler: NSObject {
     
     var targetVersion: String
     
-    var handler: () -> ()
+    var handler: () throws -> ()
     
-    public init(targetVersion: String, handler: () -> ()) {
+    public init(targetVersion: String, handler: () throws -> ()) {
         self.targetVersion = targetVersion
         self.handler = handler
     }
     
     public func migrate() throws {
-        self.handler()
+        try self.handler()
     }
 }

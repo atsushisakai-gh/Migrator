@@ -206,6 +206,25 @@ class MigratorTests: XCTestCase, MigratorProtocol {
         XCTAssertTrue(migratorMock.lastMigratedVersion() == "1.0.0")
     }
 
+    enum TestError: ErrorType {
+        case UnexpectedError
+    }
+
+    func testFailedMigrateDelegate() {
+        let migratorMock: MigratorMock = MigratorMock()
+
+        migratorMock.setInitialVersion("0.9.0")
+
+        let handler: MigrationHandler =  MigrationHandler(
+            targetVersion: "1.0.0",
+            handler: { () throws -> () in throw TestError.UnexpectedError }
+        )
+        migratorMock.registerHandler(handler)
+        migratorMock.delegate = self
+        migratorMock.migrate()
+    }
+
+
     func didSucceededMigration(migratedVersion: String) {
         XCTAssertTrue(migratedVersion == "1.0.0")
     }
