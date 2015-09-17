@@ -35,7 +35,7 @@ public class Migrator: NSObject {
         for handler: MigrationHandler in self.migrationHandlers {
             migrate(handler)
         }
-        self.delegate?.didCompletedAllMigration()
+        self.delegate?.didCompletedAllMigration!()
     }
 
     public func registerHandler(handler: MigrationHandler) {
@@ -101,12 +101,12 @@ public class Migrator: NSObject {
         do {
             try handler.migrate()
         } catch {
-            self.delegate?.didFailedMigration(handler.targetVersion)
+            self.delegate?.didFailedMigration!(handler.targetVersion)
         }
 
         setLastMigratedVersion(handler.targetVersion)
 
-        self.delegate?.didSucceededMigration(handler.targetVersion)
+        self.delegate?.didSucceededMigration!(handler.targetVersion)
     }
 
 }
