@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "Migrator"
-  s.version          = "0.1.1"
-  s.summary          = "Migrator"
+  s.version          = "0.2.0"
+  s.summary          = "iOS Application Migration Handler"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
   Migrator is a library for performing the migration of the data when the iOS app has been upgraded.
                        DESC
