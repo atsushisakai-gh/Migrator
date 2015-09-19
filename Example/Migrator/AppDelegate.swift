@@ -57,6 +57,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MigratorProtocol {
     func didSucceededMigration(migratedVersion: String) {
         print("[Migrator] Did Succeeded Migration to version \(migratedVersion)!!")
     }
+    
+    func didFailedMigration(migratedVersion: String, error: ErrorType) {
+        print("[Migrator] Did Succeeded Migration to version \(error)!!")
+    }
 
     func didCompletedAllMigration() {
         print("[Migrator] Completed Migrations!!")

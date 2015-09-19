@@ -9,13 +9,13 @@
 import UIKit
 import EDSemver
 
-@objc public protocol MigratorProtocol : class {
+public protocol MigratorProtocol : class {
 
-    optional func didSucceededMigration(migratedVersion: String) -> ()
+    func didSucceededMigration(migratedVersion: String) -> ()
 
-    optional func didFailedMigration(migratedVersion: String) -> ()
+    func didFailedMigration(migratedVersion: String, error: ErrorType) -> ()
 
-    optional func didCompletedAllMigration() -> ()
+    func didCompletedAllMigration() -> ()
 
 }
 
@@ -35,7 +35,7 @@ public class Migrator: NSObject {
         for handler: MigrationHandler in self.migrationHandlers {
             migrate(handler)
         }
-        self.delegate?.didCompletedAllMigration!()
+        self.delegate?.didCompletedAllMigration()
     }
 
     public func registerHandler(targetVersion: String, migration: () throws -> Void) {
@@ -106,13 +106,13 @@ public class Migrator: NSObject {
 
         do {
             try handler.migrate()
-        } catch {
-            self.delegate?.didFailedMigration!(handler.targetVersion)
+        } catch let error {
+            self.delegate?.didFailedMigration(handler.targetVersion, error: error)
         }
 
         setLastMigratedVersion(handler.targetVersion)
 
-        self.delegate?.didSucceededMigration!(handler.targetVersion)
+        self.delegate?.didSucceededMigration(handler.targetVersion)
     }
 
 }

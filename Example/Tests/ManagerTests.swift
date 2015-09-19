@@ -178,11 +178,12 @@ class MigratorTests: XCTestCase, MigratorProtocol {
     func didSucceededMigration(migratedVersion: String) {
         XCTAssertTrue(migratedVersion == "1.0.0")
     }
-
-    func didFailedMigration(migratedVersion: String) {
+    
+    func didFailedMigration(migratedVersion: String, error: ErrorType) {
+        XCTAssertTrue(error is TestError)
         XCTAssertTrue(migratedVersion == "1.0.0")
     }
-
+    
     func didCompletedAllMigration() {
     }
 }
