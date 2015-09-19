@@ -23,11 +23,11 @@ class MigratorTests: XCTestCase, MigratorProtocol {
 
     override func setUp() {
         super.setUp()
+        migrator.reset()
     }
     
     override func tearDown() {
         super.tearDown()
-        migrator.reset()
     }
 
     func testLastMigratedVersionIsEmpty() {

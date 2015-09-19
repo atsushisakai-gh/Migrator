@@ -20,6 +20,10 @@ public class MigrationHandler: NSObject {
     }
     
     public func migrate() throws {
-        try self.handler()
+        do {
+            try self.handler()
+        } catch let error {
+            throw error
+        }
     }
 }
