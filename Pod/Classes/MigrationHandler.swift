@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class MigrationHandler: NSObject {
+public class MigrationHandler {
     
     var targetVersion: String
     
