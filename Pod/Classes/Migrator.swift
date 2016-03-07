@@ -19,7 +19,7 @@ public protocol MigratorProtocol : class {
 
 }
 
-public class Migrator: NSObject {
+public class Migrator {
 
     var migrationHandlers: [MigrationHandler] = []
 
