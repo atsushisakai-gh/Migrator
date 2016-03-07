@@ -1,5 +1,3 @@
-disabled_rules:
-included:
-excluded:
-  - Carthage
-  - Pods
+swift:
+  enabled: true
+  config_file: .swiftlint.yml
